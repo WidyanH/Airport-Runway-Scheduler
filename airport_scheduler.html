@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airport Runway Scheduler Display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Flight Departure & Arrival Schedule</h1>
+  <h2>Airport Runway Assignment Board</h2>
+
+  <div class="flight-table-container">
+    <table class="flight-table">
+      <thead>
+        <tr>
+          <th>Flight</th>
+          <th>Type</th>
+          <th>Scheduled Time</th>
+          <th>Runway</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="inefficientTable"></tbody>
+    </table>
+
+    <table class="flight-table">
+      <thead>
+        <tr>
+          <th>Flight</th>
+          <th>Type</th>
+          <th>Scheduled Time</th>
+          <th>Runway</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="optimizedTable"></tbody>
+    </table>
+  </div>
+
+  <div class="legend">
+    The first table simulates an inefficient scheduler (linear scan), while the second uses optimized next-slot assignment.
+  </div>
+
+  <button id="startBtn">Start Scheduler</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
